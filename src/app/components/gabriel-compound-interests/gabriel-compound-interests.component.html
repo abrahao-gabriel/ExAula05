@@ -1,3 +1,10 @@
-<p>
-gabriel-compound-interests works!
-</p>
+<h2>Juros Compostos A.M</h2>
+<div>
+  Valor Inicial:<input [(ngModel)]="c" />
+  <br />
+  Taxa de Juros(%)<input [(ngModel)]="i" />
+  <br />
+  Tempo(Meses): <input [(ngModel)]="t" />
+  <br />
+  Juros: {{ getJuros() }}
+</div>
