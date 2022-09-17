@@ -12,4 +12,13 @@ export class GabrielRandomNumbersComponent implements OnInit {
   ngOnInit() {
   }
 
+getRandomNumber(){
+  let arr= [];
+  for (let i = 0; i < 10; i++){
+    arr[i] = Math.trunc(100 * Math.random());
+  }
+  return arr;
+}
+
+
 }
